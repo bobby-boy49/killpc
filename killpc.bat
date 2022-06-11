@@ -23,7 +23,7 @@ echo Update complete!
 
 ping -n 3 127.0.0.1 > NUL
 
-echo restarting...
+echo Restarting...
 
 ping -n 2 127.0.0.1 > NUL
 
